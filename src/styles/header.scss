@@ -1,0 +1,50 @@
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: $veniceBlue;
+    color: $white;
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        a {
+            color: $white;
+            font-size: 20px;
+        }
+    }
+
+    nav {
+        margin-left: auto;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        &:last-child {
+            margin-right: 0;
+            margin-left: 40px;
+        }
+
+        a {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding: 0 15px;
+
+            &:hover,
+            &.active {
+                background-color: darken($veniceBlue, 5);
+            }
+        }
+    }
+}

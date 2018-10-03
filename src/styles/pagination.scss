@@ -1,0 +1,36 @@
+.pagination-wrapper {
+    clear: both;
+    margin-top: 60px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    li {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active a {
+            background-color: $veniceBlue;
+            border-color: $veniceBlue;
+            color: $white;
+        }
+
+        &.disabled a {
+            color: $darkGray;
+            border-color: $lightGray;
+            background-color: $lightGray;
+        }
+
+        a {
+            padding: 5px 10px;
+            cursor: pointer;
+            border: solid 1px $borderGray;
+        }
+    }
+}

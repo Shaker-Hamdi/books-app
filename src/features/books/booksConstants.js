@@ -1,0 +1,2 @@
+export const LOAD_BOOKS = "LOAD_BOOKS";
+export const GET_GETEGORY_BOOKS = "GET_GETEGORY_BOOKS";
